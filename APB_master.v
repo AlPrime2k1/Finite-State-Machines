@@ -41,8 +41,8 @@ output reg [7:0]PWDATA //FINAL WRITE
     begin
         if(PRESETn)
             state <= IDLE;
-	    else
-		    state <= next_state;
+	else
+	    state <= next_state;
     end
     
     always@(*)
@@ -118,8 +118,8 @@ output reg [7:0]PWDATA //FINAL WRITE
     end
 always@(posedge PCLK)
 begin
-    PWDATA<=writeint;
-    READOUT<=readint;
+    PWDATA<=writeint;	 //Data is written
+    READOUT<=readint; 	 //Data is read
 end    
 endmodule
 
