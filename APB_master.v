@@ -28,7 +28,6 @@ output reg [7:0] writeint,//WRITE INTERMEDIATE
 output reg PSEL,
 output reg PENABLE,
 output reg [7:0]PADDR,//read or write address
-	//output reg PWRITE,
 output reg [7:0]PWDATA //FINAL WRITE
 	
     );
@@ -116,10 +115,10 @@ output reg [7:0]PWDATA //FINAL WRITE
             endcase
         end
     end
-always@(posedge PCLK)
-begin
-    PWDATA<=writeint;	 //Data is written
-    READOUT<=readint; 	 //Data is read
-end    
-endmodule
+    always@(posedge PCLK)
+    begin
+        PWDATA<=writeint;	 //Data is written
+        READOUT<=readint; 	 //Data is read
+    end    
+    endmodule
 
