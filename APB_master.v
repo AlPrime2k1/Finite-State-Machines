@@ -6,7 +6,7 @@
 // Create Date:    03:15:23 11/09/2022 
 // Design Name: APB PROTOCOL
 // Module Name:    APB_master 
-//
+// Description: AMBA APB Master using FSM with slave output signals as input to master. It was designed for implemntation on Spartan 6 series FPGA boards.
 //////////////////////////////////////////////////////////////////////////////////
 module APB_master(
 
@@ -30,7 +30,7 @@ output reg PENABLE,
 output reg [7:0]PADDR,//read or write address
 	//output reg PWRITE,
 output reg [7:0]PWDATA //FINAL WRITE
-	//output PSLVERR
+	
     );
     
     
