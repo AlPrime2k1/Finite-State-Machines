@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _vending_mac_tb_with_coverage_dutContentFrame5.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  <script type="text/javascript" src="../scripts/popup.js"></script>
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> State-machine Coverage Report</h1>
+  <h3>Scope: /<a href="z000010.htm">vending_mac_tb_with_coverage</a>/<a href="z000029.htm">dut</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg35"/><hr/><table cellspacing="2" cellpadding="2">
+  <tr><td colspan="3">FSM: <a href="__HDL_srcfile_1.htm#36">state</a></td><td class="bgGreen">96.15%</td></tr>
+  <tr><th class="odd" colspan="2">States / Transitions</th><th class="even">Hits</th><th class="odd">Status</th></tr>
+  <tr><td class="odd" colspan="2">State: IDLE</td><td class="even_r"><a href="pertest.htm?bin=f36_0&scope=000029" rel="popup 200 200">204</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: IDLE -> IDLE</td><td class="even_r"><a href="pertest.htm?bin=f37_0&scope=000029" rel="popup 200 200">128</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: IDLE -> RS2</td><td class="even_r"><a href="pertest.htm?bin=f37_1&scope=000029" rel="popup 200 200">43</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: IDLE -> RS1</td><td class="even_r"><a href="pertest.htm?bin=f37_2&scope=000029" rel="popup 200 200">33</a></td><td class="green">Covered</td></tr>
+  <tr><td class="odd" colspan="2">State: RS2</td><td class="even_r"><a href="pertest.htm?bin=f36_1&scope=000029" rel="popup 200 200">51</a></td><td class="green">Covered</td></tr>
+  <tr class="missing"><td class="invisible">&nbsp;</td><td class="odd">Trans: RS2 -> RS2</td><td class="even_r">0</td><td class="red">ZERO</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: RS2 -> IDLE</td><td class="even_r"><a href="pertest.htm?bin=f37_4&scope=000029" rel="popup 200 200">5</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: RS2 -> CHANGE</td><td class="even_r"><a href="pertest.htm?bin=f37_5&scope=000029" rel="popup 200 200">23</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: RS2 -> PRODUCT</td><td class="even_r"><a href="pertest.htm?bin=f37_6&scope=000029" rel="popup 200 200">23</a></td><td class="green">Covered</td></tr>
+  <tr><td class="odd" colspan="2">State: RS1</td><td class="even_r"><a href="pertest.htm?bin=f36_2&scope=000029" rel="popup 200 200">92</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: RS1 -> RS1</td><td class="even_r"><a href="pertest.htm?bin=f37_7&scope=000029" rel="popup 200 200">59</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: RS1 -> IDLE</td><td class="even_r"><a href="pertest.htm?bin=f37_8&scope=000029" rel="popup 200 200">5</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: RS1 -> PRODUCT</td><td class="even_r"><a href="pertest.htm?bin=f37_9&scope=000029" rel="popup 200 200">13</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: RS1 -> RS2</td><td class="even_r"><a href="pertest.htm?bin=f37_10&scope=000029" rel="popup 200 200">8</a></td><td class="green">Covered</td></tr>
+  <tr><td class="odd" colspan="2">State: PRODUCT</td><td class="even_r"><a href="pertest.htm?bin=f36_3&scope=000029" rel="popup 200 200">36</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: PRODUCT -> IDLE</td><td class="even_r"><a href="pertest.htm?bin=f37_11&scope=000029" rel="popup 200 200">36</a></td><td class="green">Covered</td></tr>
+  <tr><td class="odd" colspan="2">State: CHANGE</td><td class="even_r"><a href="pertest.htm?bin=f36_4&scope=000029" rel="popup 200 200">23</a></td><td class="green">Covered</td></tr>
+  <tr class="covered"><td class="invisible">&nbsp;</td><td class="odd">Trans: CHANGE -> IDLE</td><td class="even_r"><a href="pertest.htm?bin=f37_12&scope=000029" rel="popup 200 200">23</a></td><td class="green">Covered</td></tr>
+  </table>
+  </div>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

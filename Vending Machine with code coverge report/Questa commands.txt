@@ -1,0 +1,30 @@
+vlib work
+
+vlog -coveropt 3 +cover +acc vending_machine.v vending_machine_tb.v
+
+vsim -coverage -vopt work.vending_machine_tb -c -do "coverage save -onexit -directive -codeAll vencov1.ucdb;run -all"
+
+vcover merge <merge name>.ucdb <vencov1>.ucdb vencov2.ucdb
+ 
+vcover report -html -htmldir coverfolder vencov1.ucdb
+
+vsim -view vsim.wlf -do wave.do
+
+
+
+
+vsim -coverage -vopt work.vending_mac_alt -c -do "coverage save -onexit -directive -codeAll ven1.ucdb;run -all" +IDLEtoRS2toCHANGE
+
+vsim -coverage -vopt work.vending_mac_alt -c -do "coverage save -onexit -directive -codeAll ven2.ucdb;run -all" +IDLEtoRS2toPRODUCT
+
+vsim -coverage -vopt work.vending_mac_alt -c -do "coverage save -onexit -directive -codeAll ven3.ucdb;run -all" +IDLEtoRS1toPRODUCT
+
+vsim -coverage -vopt work.vending_mac_alt -c -do "coverage save -onexit -directive -codeAll ven4.ucdb;run -all" +IDLEtoRS1toRS2toPRODUCT
+
+vsim -coverage -vopt work.vending_mac_alt -c -do "coverage save -onexit -directive -codeAll ven5.ucdb;run -all" +IDLEtoRS1toRS2toCHANGE
+
+vsim -coverage -vopt work.vending_mac_alt -c -do "coverage save -onexit -directive -codeAll ven6.ucdb;run -all" +TIMEOUT
+
+vcover merge timetest.ucdb ven1.ucdb ven2.ucdb ven3.ucdb ven4.ucdb ven5.ucdb ven6.ucdb
+
+vcover report -html -htmldir timefolder1 timetest.ucdb
